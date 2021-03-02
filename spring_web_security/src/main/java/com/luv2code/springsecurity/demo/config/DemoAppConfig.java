@@ -18,6 +18,7 @@ public class DemoAppConfig {
 	public ViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		
+		// 'view' folder that holds our JSP web pages
 		viewResolver.setPrefix("/WEB-INF/view/");
 		viewResolver.setSuffix(".jsp");
 		

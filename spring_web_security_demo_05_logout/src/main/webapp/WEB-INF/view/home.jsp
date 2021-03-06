@@ -11,9 +11,16 @@
 
 	<h2>Home Page</h2>
 
-	Welcome to the Home Page!
+	<p>
+		Welcome to the Home Page!
+	</p>
 	
-  
+	<form:form action="${pageContext.request.contextPath}/logout"
+	           method="POST">
+	           
+		<input type="submit" value="Logout" />
+	           
+	</form:form>
 
 </body>
 </html>

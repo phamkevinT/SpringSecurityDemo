@@ -43,7 +43,7 @@
         
         
         <property name="java-output-path" value="/spring_web_security_demo_01_base_app/target/classes"/>
-        <property name="context-root" value="spring_web_security_demo_08_jdbc_plaintext"/>
+        <property name="context-root" value="spring-security-demo"/>
                                                                     
     
     

@@ -28,6 +28,9 @@
 			<version>${springframework.version}</version>
 		</dependency>
 		
+		
+		
+		
 		<!-- Spring Security -->
 		<!-- spring-security-web -->
 		<dependency>
@@ -36,7 +39,6 @@
 		  <version>${springsecurity.version}</version>
 		</dependency>
 		
-		<!-- Spring Security -->
 		<!-- spring-security-config -->
 		<dependency>
 		  <groupId>org.springframework.security</groupId>
@@ -50,6 +52,25 @@
 		  <artifactId>spring-security-taglibs</artifactId>
 		  <version>${springsecurity.version}</version>
 		</dependency>
+		
+		
+		
+		
+		<!-- MySQL and C3P0 Support -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.45</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.5.2</version>
+		</dependency>
+		
+		
+		
 
 		<!-- Servlet, JSP and JSTL support -->
 		<dependency>
@@ -76,6 +97,8 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.0</version>
 		</dependency>
+
+
 
 		<dependency>
 			<groupId>junit</groupId>

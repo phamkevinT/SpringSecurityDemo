@@ -28,7 +28,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		http.authorizeRequests()
-				.anyRequest().authenticated() // Require all request to be authenticated
+			.antMatchers("/").hasRole("EMPLOYEE")
+			.antMatchers("/leaders/**").hasRole("MANAGER") // Restrict "leaders" page access to only managers 
+			.antMatchers("/systems/**").hasRole("ADMIN") // Restrict "systems" page access to only admin
 			.and()
 			.formLogin()
 				.loginPage("/showMyLoginPage")	// Show our custom login form at this request mapping

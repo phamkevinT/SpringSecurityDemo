@@ -37,7 +37,9 @@ public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 				.loginProcessingUrl("/authenticateTheUser")	// Login form should POST data to this URL for processing
 				.permitAll() // Allow everyone to see the login form.
 			.and()
-			.logout().permitAll(); // Enable logout support
+			.logout().permitAll() // Enable logout support
+			.and() 
+			.exceptionHandling().accessDeniedPage("/access-denied"); // login access denied page
 	}
 	
 	
